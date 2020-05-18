@@ -14,8 +14,8 @@ const Routes = () => {
   return (
     <Router history={History}>
       <Switch>
-        <Redirect from='*' to='/' />
         <Route exact path='/' render={() => <Home />} />
+        <Redirect from='*' to='/' />
       </Switch>
     </Router>
   )

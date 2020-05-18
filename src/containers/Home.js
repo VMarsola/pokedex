@@ -1,12 +1,12 @@
 import React from 'react'
-import Botao from '../components/Botao'
 
+import Pokelist from '../components/PokeList'
 
 export default function home() {
 
   return (
     <>
-    <Botao></Botao>
+        <Pokelist/>
     </>
     )
 }
