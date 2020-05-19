@@ -5,7 +5,7 @@ import ModalProfile from './ModalProfile'
 import PokeDetail from './PokeDetail'
 import PokeList from './PokeList'
 import SearchInput from './SearchInput'
-import VersionsList from './VersionsList'
+import Menu from './Menu'
 
 export {
     DoubleBall,
@@ -15,5 +15,5 @@ export {
     PokeDetail,
     PokeList,
     SearchInput,
-    VersionsList
+    Menu
 }

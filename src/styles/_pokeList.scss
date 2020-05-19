@@ -1,0 +1,18 @@
+.pokelist-container{
+    height: 65vh;
+    margin: 3%;
+    background: $white;
+    border: $borderBlack;
+    border-radius: 10px;
+    
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+
+        li{
+            font-family: $muli;
+            color: $black;
+            text-align: center;
+        }
+    }
+}

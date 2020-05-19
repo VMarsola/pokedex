@@ -1,0 +1,17 @@
+.doubleBall-container {
+    width: 100%;
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+
+    div {
+        margin: 20px;
+        background: $red;
+        width: 30px;
+        height: 30px;
+        border: $borderBlack;
+        border-radius:50%;
+    }
+}

@@ -1,12 +1,17 @@
 import React from 'react'
 
-import Pokelist from '../components/PokeList'
+import {PokeList, DoubleBall, SingleBall, Menu} from '../components'
 
 export default function home() {
 
   return (
-    <>
-        <Pokelist/>
-    </>
+    <div className="home">
+        <DoubleBall/>
+        <PokeList/>
+        <div className="wrapper-down-line">
+          <SingleBall/>
+          <Menu/>
+        </div>
+    </div>
     )
 }
