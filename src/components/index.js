@@ -6,6 +6,7 @@ import PokeDetail from './PokeDetail'
 import PokeList from './PokeList'
 import SearchInput from './SearchInput'
 import Menu from './Menu'
+import Generation from './Generation'
 
 export {
     DoubleBall,
@@ -15,5 +16,6 @@ export {
     PokeDetail,
     PokeList,
     SearchInput,
-    Menu
+    Menu,
+    Generation
 }

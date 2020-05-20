@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default function SearchInput() {
-    return(
-        <>
-        </>
-    )
+
+    return (
+            <input
+                className="searchInput"
+                type="text"
+                placeholder="Procure seu pokémon: "
+            />
+            
+    );
 }
+
+

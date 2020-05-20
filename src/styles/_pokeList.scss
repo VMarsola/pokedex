@@ -1,11 +1,22 @@
 .pokelist-container{
-    height: 65vh;
-    margin: 3%;
     background: $white;
+    height: 70vh;
+    margin: 1% 3%;
     border: $borderBlack;
     border-radius: 10px;
-    
+    overflow:hidden; 
+    overflow-y:scroll;
+
+    div {
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+    }
+
     ul{
+        padding: 2%;
+
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, auto));
 

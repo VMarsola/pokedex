@@ -1,0 +1,12 @@
+.searchInput {
+    background: $background;
+    font-size: 22px;
+    box-shadow: 4px 4px 4px $background;
+    border: $borderBlack;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 5px 30px ;
+
+    display: flex;
+    align-items: center;
+}
