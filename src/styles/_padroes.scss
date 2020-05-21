@@ -12,4 +12,8 @@ $black: #000000;
 $orange: #EF5350;
 
 //border 
-$borderBlack: solid 2px $black
+$borderBlack: solid 2px $black;
+
+.clear {
+    clear: both;
+}
