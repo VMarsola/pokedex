@@ -14,6 +14,12 @@ $orange: #EF5350;
 //border 
 $borderBlack: solid 2px $black;
 
-.clear {
-    clear: both;
+
+//default classes
+.off {
+    display: none !important;
 }
+
+//sizes
+$tablet:768px;
+$mobile:425px;

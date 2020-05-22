@@ -1,3 +1,4 @@
+![Logo](assets/logo.png)
 # pokedex
 
 ## Projeto
@@ -18,3 +19,13 @@ $ cd pokedex
 ```
 $ yarn
 ```
+
+##Design
+*(https://xd.adobe.com/view/8a0d8f37-33f1-433b-4777-b59ad5f2d8ce-fc3c/?fullscreen)
+
+## Feito com
+
+* [Axios](https://github.com/axios/axios)
+* [React](https://pt-br.reactjs.org/)
+* [sass](https://sass-lang.com/)
+* [Font Awessome](https://fontawesome.com/)

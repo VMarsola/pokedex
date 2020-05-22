@@ -1,4 +1,4 @@
-.searchInput {
+.search-input {
     background: $background;
     font-size: 22px;
     box-shadow: 4px 4px 4px $background;
@@ -8,5 +8,11 @@
     padding: 5px 30px ;
 
     display: flex;
-    align-items: center;
+}
+  
+@media only screen and (max-width: $tablet) {
+    .search-input{
+        font-size: 15px;
+        padding: 5px 10px ;
+    }
 }

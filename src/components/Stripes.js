@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function menu() {
+export default function Stripes() {
     return(
-        <div className="menu-container">
+        <div className="Stripes-container">
             <div></div>
             <div></div>
             <div></div>
