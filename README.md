@@ -1,4 +1,4 @@
-![Logo](assets/logo.png)
+![Logo](./src/assets/logo.png)
 # pokedex
 
 ## Projeto
