@@ -39,22 +39,22 @@ function PokeList() {
     const showPokemon = (pokemon) => {
         axios
             .all([
-              axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`), 
-              axios.get(`https://pokeapi.co/api/v2/pokemon-species/${pokemon.id}`)
+                axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`),
+                axios.get(`https://pokeapi.co/api/v2/pokemon-species/${pokemon.id}`)
             ])
             .then(
-              axios.spread((...responses) => {
-                
-                  pokemon.type = responses[0].data.types[0].type.name
-                  pokemon.height = responses[0].data.height
-                  pokemon.weight = responses[0].data.weight
-                  pokemon.exp = responses[0].data.base_experience
-                  pokemon.captRate = responses[1].data.capture_rate
-                  
-                  setPoke(pokemon)
+                axios.spread((...responses) => {
 
-                  setModal(!modal)
-              })
+                    pokemon.type = responses[0].data.types[0].type.name
+                    pokemon.height = responses[0].data.height
+                    pokemon.weight = responses[0].data.weight
+                    pokemon.exp = responses[0].data.base_experience
+                    pokemon.captRate = responses[1].data.capture_rate
+
+                    setPoke(pokemon)
+
+                    setModal(!modal)
+                })
             )
             .catch((error) => {
                 console.log("Ops! Algo deu errado: ", error);
@@ -63,35 +63,29 @@ function PokeList() {
 
     const closeModal = (() => {
         setModal(!modal)
-        
+
     })
 
     return (
         <div className="pokelist-container">
             <div className={modal ? "container-modal" : "container-modal off"}>
-                <FaWindowClose
-                    onClick={closeModal}
-                    className="close-icon"
-                />
-                <input
-                    className="search-input"
-                    type="text"
-                    placeholder="Procure seu pokémon: "
-                    onChange={e => setSearch(e.target.value)}
-                />
-                <div>
+                <div className="wrapper">
+                    <FaWindowClose
+                        onClick={closeModal}
+                        className="close-icon"
+                    />
                     <div className="basic-info">
                         <img src={poke.thumb} alt={poke.name} />
                         <div>
                             <p>Name: {poke.name}</p>
-                            <p>Type:{poke.type}</p>
+                            <p>Type: {poke.type}</p>
                         </div>
                     </div>
                     <div className="specs">
-                        <p>Capture rate:{poke.captRate}</p>
-                        <p>Height:{poke.height}</p>
+                        <p>Capture rate: {poke.captRate}</p>
+                        <p>Height: {poke.height}</p>
                         <p>Base XP: {poke.exp}</p>
-                        <p>Weight:{poke.weight}</p>
+                        <p>Weight: {poke.weight}</p>
                     </div>
                 </div>
             </div>
