@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+* a {
+  text-decoration: none;
+}
+* li {
+  list-style-type: none;
+}
+
+.off {
+  display: none !important;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: #DEDEDE;
+}
+.home .wrapper-down-line {
+  padding: 1% 5%;
+  background: #DEDEDE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.doubleBall-container {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.doubleBall-container div {
+  margin: 20px;
+  background: #DC0A2D;
+  width: 30px;
+  height: 30px;
+  border: solid 2px #000000;
+  border-radius: 50%;
+}
+
+.single-ball {
+  width: 40px;
+  height: 40px;
+  background: #DC0A2D;
+  border: solid 2px #000000;
+  border-radius: 50%;
+}
+
+.Stripes-container div {
+  margin: 6px 0;
+  background-color: #000000;
+  width: 35px;
+  height: 6px;
+  border-radius: 20%;
+}
+
+.pokelist-container {
+  position: relative;
+  height: 70vh;
+  margin: 1% 3%;
+  background: #F3F3F3;
+  border: solid 15px #F3F3F3;
+  border-radius: 25px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-clip-path: polygon(0 0, 0 87%, 6% 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 0 87%, 6% 100%, 100% 100%, 100% 0);
+}
+.pokelist-container .container-modal {
+  position: fixed;
+  background: #EF5350;
+  border: solid 2px #000000;
+  width: 40%;
+  height: auto;
+  max-height: 70vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.pokelist-container .container-modal .wrapper {
+  position: absolute;
+  margin: 0 auto;
+  padding: 1rem;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.pokelist-container .container-modal .wrapper .close-icon {
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+.pokelist-container .container-modal .wrapper .basic-info {
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pokelist-container .container-modal .wrapper .basic-info img {
+  flex: 1;
+  max-width: 100px;
+}
+.pokelist-container .container-modal .wrapper .basic-info p {
+  position: relative;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  font-weight: 900;
+  color: #F3F3F3;
+}
+.pokelist-container .container-modal .specs {
+  margin: 10% 0 0 0;
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+.pokelist-container .container-modal .specs p {
+  background: #F3F3F3;
+  color: #000000;
+  font-family: "Muli", sans-serif;
+  border: solid 2px #000000;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.pokelist-container .filter-pokemons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.pokelist-container ul {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+}
+.pokelist-container ul li {
+  font-family: "Muli", sans-serif;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .pokelist-container .container-modal .specs p {
+    padding: 0.5rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .pokelist-container .container-modal {
+    overflow: unset;
+    width: unset;
+    height: unset;
+  }
+}
+.search-input {
+  background: #DEDEDE;
+  font-size: 22px;
+  box-shadow: 4px 4px 4px #DEDEDE;
+  border: solid 2px #000000;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 5px 30px;
+  display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .search-input {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+}
+.generation {
+  max-width: 150px;
+  background: transparent;
+  border-style: none;
+  font-family: "Muli", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  right: 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .generation {
+    position: relative;
+    right: 0;
+  }
+}/*# sourceMappingURL=index.css.map */

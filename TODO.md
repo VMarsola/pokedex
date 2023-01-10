@@ -1,0 +1,4 @@
+- Passar o projeto inteiro para TS
+- Atualizar para o React 18
+- Reactizar tudo possível (com callbacks, memos e afins)
+- Reestruturar para SOLID
